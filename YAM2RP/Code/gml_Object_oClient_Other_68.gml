@@ -2155,7 +2155,7 @@ switch type_event
                 global.anxvariable = buffer_read(_buffer, buffer_u8)
                 if (global.anxvariable == 2)
                 {
-                    popup_text("message")
+                    popup_text("They live")
                     global.anxvariable = 0
                 }
                 break
