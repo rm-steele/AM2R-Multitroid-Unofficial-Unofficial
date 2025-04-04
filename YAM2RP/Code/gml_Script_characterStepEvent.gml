@@ -1513,9 +1513,9 @@ if (state == IDLE)
         idle = 0
         canbehit = 1
     }
-    if (statetime == 200)
+    if (statetime == 1)
     {
-        if instance_exists(oClient)
+        if (instance_exists(oClient) && global.sax)
         {
             global.anxvariable = 1
             global.saveTest = buffer_create(1024, buffer_grow, 1)
