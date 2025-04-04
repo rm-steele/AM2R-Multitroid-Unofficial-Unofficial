@@ -1513,7 +1513,7 @@ if (state == IDLE)
         idle = 0
         canbehit = 1
     }
-    if (statetime == 1)
+    if (statetime == 7)
     {
         if (instance_exists(oClient) && global.sax)
         {
