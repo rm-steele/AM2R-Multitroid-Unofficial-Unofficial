@@ -2152,6 +2152,14 @@ switch type_event
                 global.startingminors[7] = buffer_read(_buffer, buffer_u8)
                 global.awaitsyncs = 0
                 break
+            case 71:
+                global.anxvariable = buffer_read(_buffer, buffer_u8)
+                if (global.anxvariable == 2)
+                {
+                    popup_text("They live")
+                    global.anxvariable = 0
+                }
+                break
         }
 }
 
