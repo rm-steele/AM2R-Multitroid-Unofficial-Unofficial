@@ -1513,21 +1513,6 @@ if (state == IDLE)
         idle = 0
         canbehit = 1
     }
-    if (statetime == 7)
-    {
-        if (instance_exists(oClient) && global.sax)
-        {
-            global.anxvariable = 1
-            global.saveTest = buffer_create(1024, buffer_grow, 1)
-            buffer_seek(global.saveTest, buffer_seek_start, 0)
-            buffer_write(global.saveTest, buffer_s32, 18)
-            buffer_write(global.saveTest, buffer_u8, 71)
-            buffer_write(global.saveTest, buffer_u8, global.anxvariable)
-            buffer_poke(global.saveTest, 0, buffer_s32, (buffer_tell(global.saveTest) - 4))
-            network_send_packet(oClient.socket, global.saveTest, buffer_tell(global.saveTest))
-            buffer_delete(global.saveTest)
-        }
-    }
 }
 if (state == SAVING)
 {
