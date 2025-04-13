@@ -1,3 +1,5 @@
+# This branch is archived. Changes and PRs are to go to the `itemsyncs` branch instead!
+
 # AM2R-Multitroid-Unofficial-Patch
 Unofficial fork of [milesthenerd's Multitroid mod](https://github.com/milesthenerd/AM2R-Multitroid).
 The goal of this project is to continue updating multitroid (primarily the SAX mode) while miles is focusing on AM2R 2.0
