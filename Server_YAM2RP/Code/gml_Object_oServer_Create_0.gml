@@ -84,11 +84,10 @@ reset_globals()
 global.slot = 1
 slotStr = string(global.slot)
 global.saveString = "\save" + slotStr + ".txt"
-syncedELM = 0
 posMapModified = 0
 global.lobbyLocked = 0
 global.damageMult = 0
-global.clientVersion = "V1.8.1"
+global.clientVersion = "IS-V2.1.0"
 global.prevMonstersLeft = 0
 global.gametime = 0
 global.gametDec = 0
@@ -97,41 +96,35 @@ global.doomstarted = 0
 global.juggActive = 0
 global.Page = 0
 global.syncpage = 0
-// major item syncs, in order listed in the AM2R inventory screen
 global.itemsyncs = 0
-// suit
 global.itemsyncs[0] = 1
 global.itemsyncs[1] = 2
 global.itemsyncs[2] = 0
-// beams
 global.itemsyncs[3] = 2
 global.itemsyncs[4] = 0
 global.itemsyncs[5] = 2
 global.itemsyncs[6] = 2
 global.itemsyncs[7] = 2
-//misc
 global.itemsyncs[8] = 1
 global.itemsyncs[9] = 2
 global.itemsyncs[10] = 2
 global.itemsyncs[11] = 2
 global.itemsyncs[12] = 1
 global.itemsyncs[13] = 2
-// boots
 global.itemsyncs[14] = 2
 global.itemsyncs[15] = 2
 global.itemsyncs[16] = 2
-// minor items
 global.startingminors = 0
-global.startingminors[0] = 0 // fusion: energy tanks
-global.startingminors[1] = 10 // sa-x: energy tanks
-global.startingminors[2] = 0 // missiles
+global.startingminors[0] = 0
+global.startingminors[1] = 10
+global.startingminors[2] = 0
 global.startingminors[3] = 44
-global.startingminors[4] = 0 // super missiles
+global.startingminors[4] = 0
 global.startingminors[5] = 10
-global.startingminors[6] = 0 // power bombs
+global.startingminors[6] = 0
 global.startingminors[7] = 10
 global.timeSincePaused = 0
 if file_exists("lang\fonts\Acknowledge_TT_BRK.ttf")
     global.syncnumsfont = font_add("lang\fonts\Acknowledge_TT_BRK.ttf", 64, 0, 0, 0, 0)
 else
-    global.syncnumsfont = font0
+    global.syncnumsfont = 0
